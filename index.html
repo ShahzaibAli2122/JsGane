@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="./main.js"></script>
+    <div id='top-bar' class='top-bar bar'>
+        <a href='#' id='sz-decr' class='ctrl sz-ctrl'>-</a>
+        <span id='sz-lbl' class='lbl-area'>5</span>
+        <a href='#' id='sz-incr' class='ctrl sz-ctrl'>+</a>
+        
+        <a href='#' id='gen' class='ctrl big-btn'>Generate New</a>
+      </div>
+      
+      <div id='game-area' class='game-area bar'>
+        <div id='settings-bar' class='bar'>
+          <ul id='next' class='next bar bar-comp'></ul>
+          
+          <span id='free' class='free lbl-area bar-comp'>
+            Free cells: 
+          </span>
+          
+          <span id='pts' class='pts lbl-area bar-comp'>
+            Score: 
+          </span>
+        </div>
+        
+        <div id='grid' class='grid bar gridcomp'></div>
+        
+        <div>
+          <a href='#' id='start' class='ctrl big-btn start'>Start!</a>
+        </div>
+      </div>
+</body>
+</html>

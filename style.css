@@ -1,0 +1,90 @@
+html {
+    font: 85%/1.5 Helvetica, sans-serif;
+  }
+  .top-bar {
+    background: palegreen;
+  }
+  .bar, .ctrl {
+    box-shadow: 1px 1px 3px;
+    text-align: center;
+  }
+  .bar:not(.next) {
+    margin: .75em auto;
+    padding: .25em .5em;
+  }
+  .ctrl, .lbl-area, .next, .next *, .gridcomp:not(.gridrow) {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .ctrl {
+    position: relative;
+    height: 1.5em;
+    background:
+      linear-gradient(palegreen, lawngreen) 0 50%;
+    background-size: 1px 100%;
+    color: darkolivegreen;
+    text-shadow: 0 1px 0 lemonchiffon;
+    text-decoration: none;
+    transition: .35s;
+  }
+  .ctrl:hover, .ctrl:focus {
+    background-size: 1px 120%;
+    color: black;
+    text-shadow: 0 1px 0 white;
+  }
+  .ctrl:active {
+    top: 1px;
+    box-shadow: inset 1px 1px 3px;
+  }
+  .sz-ctrl {
+    width: 1.5em;
+    border-radius: 50%;
+    font-weight: 900;
+  }
+  .big-btn, .lbl-area {
+    padding: 0 .8em;
+    margin: .25em 1em;
+    border-radius: .15em;
+  }
+  .lbl-area {
+    min-width: 6.5em;
+    border: solid 1px grey;
+    box-shadow: 0 1px 0 white;
+  }
+  .game-area {
+    background: linear-gradient(mintcream -66%, limegreen 133%);
+  }
+  .next {
+    padding: 0;
+    margin: .5em;
+  }
+  .sym, .gridcell {
+    width: 1.3em;
+    height: 1.3em;
+    font: 700 2.5em/1.3 Helvetica, sans-serif;
+  }
+  .next li:not(:first-child), 
+  .gridcell:not(:first-child) {
+    border-left: solid 1px grey;
+  }
+  .gridrow:not(:first-child) {
+    border-top: solid 1px grey;
+  }
+  .gridcomp, .grid.gridcomp {
+    padding: 0;
+    margin: 0;
+  }
+  .gridcell {
+    position: relative;
+    background: lightgreen;
+    cursor: pointer;
+  }
+  .pulse {
+    z-index: 9;
+    box-shadow: 1px 1px 3px;
+    animation: puls 1s infinite alternate;
+  }
+  @keyframes puls {
+    to { transform: scale(1.09); }
+  }
+  .start { margin: 1em; }
